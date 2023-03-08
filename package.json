@@ -25,7 +25,7 @@
       "react-app/jest"
     ]
   },
-  "homepage":"https://github.com/RavSharma1987/TicTacToe",
+  "homepage":"https://ravsharma1987.github.io/TicTacToe",
   "browserslist": {
     "production": [
       ">0.2%",
