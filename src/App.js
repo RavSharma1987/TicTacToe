@@ -56,7 +56,7 @@ const Board = ({
 	<div {...props}>
 		<div className={styles.Titles}> Tic Tac Toe</div>
 		<div className={styles.Status}>
-			{winner ? `${winner} is Winner` : squares.every(Boolean) ? "Draw" : ``}
+			{winner ? `${winner} is Winner` : squares?.every(Boolean) ? "Draw" : ``}
 		</div>
 		<div className={styles.Restarter}>
 			<button className={styles.Restart} onClick={onRestartClick}>
@@ -64,7 +64,7 @@ const Board = ({
 			</button>
 		</div>
 		<div className={styles.Squares}>
-			{squares.map((square, index) => (
+			{squares?.map((square, index) => (
 				<button
 					data-testid={'button-' + index}
 					className={styles.Square}
