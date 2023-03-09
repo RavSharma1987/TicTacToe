@@ -1,6 +1,7 @@
 // @ts-check
 
 import { useCallback, useMemo, useState } from "react";
+// @ts-ignore
 import styles from "./App.module.css";
 
 // We define a few JSDocs types to make everything better...
@@ -69,6 +70,7 @@ const Board = ({
 					data-testid={'button-' + index}
 					className={styles.Square}
 					key={index}
+					// @ts-ignore
 					onClick={() => onSquareClick(index)}
 				>
 					{square?square:'/' }
